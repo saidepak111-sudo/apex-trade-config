@@ -1,0 +1,10 @@
+# Database Configuration for Order Service
+spring.datasource.url=jdbc:mariadb://localhost:3306/orderstock
+spring.datasource.username=deepak
+spring.datasource.password=your_database_password
+
+# Server Port
+server.port=8083
+
+# Feign Client / Routing Configurations to locate Stock Service
+stock-service.url=http://localhost:8082
